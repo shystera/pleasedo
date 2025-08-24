@@ -1,0 +1,114 @@
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(ellipse at top, rgba(88, 28, 135, 0.3), transparent 70%), #000;
+  color: #d1d5db;
+  transition: background-color 0.3s, color 0.3s;
+}
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #9333ea; }
+
+/* Main Post */
+.main-post-card {
+  background-color: rgba(17, 24, 39, 0.4);
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+}
+
+/* Reply Item */
+.reply-item .reply-content {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid #2d2d2d;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Reply Form */
+#reply-textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #4b5563;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+}
+#reply-textarea:focus {
+  outline: none;
+  border-color: #7e22ce;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.4);
+  background-color: #000;
+}
+
+/* --- PREMIUM LIGHT THEME OVERRIDES --- */
+
+/* Base & Scrollbar */
+html[data-theme='light'] body {
+    background: #F1F3F6;
+    color: #4A5568;
+}
+html[data-theme='light'] ::-webkit-scrollbar-track { background: #E5E8EB; }
+html[data-theme='light'] ::-webkit-scrollbar-thumb { background: #CBD5E1; }
+
+/* Layout & Header */
+html[data-theme='light'] .bg-blobs { display: none; }
+html[data-theme='light'] .header-bg {
+    background-color: rgba(241, 243, 246, 0.8);
+    backdrop-filter: blur(12px);
+    border-color: #E5E8EB;
+}
+html[data-theme='light'] .nav-link { color: #4A5568; }
+html[data-theme='light'] .nav-link:hover { color: #7e22ce; }
+html[data-theme='light'] .theme-toggle-btn { color: #6B7280; }
+html[data-theme='light'] .theme-toggle-btn:hover {
+    color: #1D242D;
+    background-color: #E5E8EB;
+}
+
+/* Typography */
+html[data-theme='light'] .heading-text { color: #1D242D; }
+html[data-theme='light'] .text-gray-300 { color: #334155; }
+html[data-theme='light'] .text-gray-400 { color: #6B7280; }
+html[data-theme='light'] .text-gray-500 { color: #94A3B8; }
+html[data-theme='light'] .border-gray-700 { border-color: #E5E8EB; }
+
+/* Buttons */
+html[data-theme='light'] .bg-purple-700 {
+    background-color: #7e22ce;
+    color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+html[data-theme='light'] .bg-purple-700:hover {
+    background-color: #6b21a8;
+    transform: translateY(-1px);
+}
+
+/* Cards & Content */
+html[data-theme='light'] .main-post-card {
+    background-color: #ffffff;
+    border-color: #E5E8EB;
+    box-shadow: 0 1px 2px rgba(30, 41, 59, 0.02), 0 4px 8px rgba(30, 41, 59, 0.03);
+}
+html[data-theme='light'] .reply-item .reply-content {
+    background-color: #ffffff;
+    border-color: #E5E8EB;
+}
+
+/* Reply Form */
+html[data-theme='light'] #reply-textarea {
+    background-color: #F8FAFC;
+    border-color: #DDE1E6;
+    color: #334155;
+}
+html[data-theme='light'] #reply-textarea:focus {
+    border-color: #a855f7;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(126, 34, 206, 0.15);
+}

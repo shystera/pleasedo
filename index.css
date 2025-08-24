@@ -1,0 +1,141 @@
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(ellipse at top, rgba(88, 28, 135, 0.3), transparent 70%), #000;
+  color: #d1d5db;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* When mobile menu is open, prevent body from scrolling */
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+/* When mobile menu is open, ensure the header behind it is transparent */
+body.mobile-menu-open header {
+  background-color: transparent;
+}
+
+/* --- PREMIUM LIGHT THEME OVERRIDES --- */
+
+/* Base */
+html[data-theme='light'] body {
+    background: #F1F3F6;
+    color: #4A5568;
+}
+html[data-theme='light'] .bg-blobs { display: none; }
+
+/* Header */
+html[data-theme='light'] #main-header {
+    background-color: rgba(241, 243, 246, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #E5E8EB;
+}
+html[data-theme='light'] .brand-text { color: #1D242D; }
+html[data-theme='light'] .nav-link,
+html[data-theme='light'] .nav-link-mobile {
+    color: #4A5568;
+}
+html[data-theme='light'] .nav-link:hover,
+html[data-theme='light'] .nav-link-mobile:hover {
+    color: #7e22ce;
+}
+html[data-theme='light'] .nav-contact {
+    color: #334155;
+    background-color: #ffffff;
+    border: 1px solid #E5E8EB;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+html[data-theme='light'] .nav-contact:hover {
+    background-color: #ffffff;
+    border-color: #CBD5E1;
+    transform: translateY(-1px);
+}
+html[data-theme='light'] .theme-toggle-btn { color: #6B7280; }
+html[data-theme='light'] .theme-toggle-btn:hover {
+    color: #1D242D;
+    background-color: #E5E8EB;
+}
+html[data-theme='light'] #menu-btn { color: #1D242D; }
+
+/* Mobile Menu */
+html[data-theme='light'] #mobile-menu {
+    background-color: rgba(241, 243, 246, 0.95);
+}
+
+/* Hero */
+html[data-theme='light'] .hero-heading { color: #1D242D; }
+html[data-theme='light'] .bg-purple-700 {
+    background-color: #7e22ce;
+    color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(126, 34, 206, 0.2);
+}
+html[data-theme='light'] .bg-purple-700:hover {
+    background-color: #6b21a8;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 5px 15px rgba(126, 34, 206, 0.25);
+}
+html[data-theme='light'] .text-gray-300 { color: #4A5568; }
+html[data-theme='light'] .star-empty { color: #E5E8EB; }
+html[data-theme='light'] .highlight-text { color: #1D242D; }
+
+/* Case Study */
+html[data-theme='light'] .case-study-wrapper {
+    background-color: #ffffff;
+    border-color: #E5E8EB;
+    box-shadow: 0 4px 8px rgba(30, 41, 59, 0.04), 0 12px 24px rgba(30, 41, 59, 0.06);
+}
+html[data-theme='light'] .text-gray-400 { color: #6B7280; }
+html[data-theme='light'] .carousel-nav-btn {
+    background-color: #ffffff;
+    color: #4A5568;
+    border-color: #E5E8EB;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.07);
+}
+html[data-theme='light'] .carousel-nav-btn:hover {
+    border-color: #7e22ce;
+    color: #7e22ce;
+}
+html[data-theme='light'] .carousel-dot { background-color: #CBD5E1; }
+html[data-theme='light'] .carousel-dot:hover { background-color: #94A3B8; }
+html[data-theme='light'] .carousel-dot.active { background-color: #7e22ce; }
+
+/* Trusted By */
+html[data-theme='light'] .trusted-by-logo { color: #CBD5E1; }
+
+/* Features */
+html[data-theme='light'] #features {
+    background-color: #ffffff;
+    border-top: 1px solid #E5E8EB;
+    border-bottom: 1px solid #E5E8EB;
+}
+html[data-theme='light'] .section-heading { color: #1D242D; }
+html[data-theme='light'] .feature-icon-wrapper {
+    background-color: #faf5ff;
+    border: 1px solid #f3e8ff;
+}
+html[data-theme='light'] .feature-icon-wrapper svg { color: #7e22ce; }
+
+/* Testimonials */
+html[data-theme='light'] .testimonial-card {
+    background-color: #ffffff;
+    border-color: #E5E8EB;
+    box-shadow: 0 1px 2px rgba(30, 41, 59, 0.02), 0 4px 8px rgba(30, 41, 59, 0.03);
+    transition: all 0.25s ease-in-out;
+}
+html[data-theme='light'] .testimonial-card:hover {
+    border-color: #d8b4fe;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(30, 41, 59, 0.04), 0 10px 20px rgba(30, 41, 59, 0.05);
+}
+html[data-theme='light'] .text-gray-500 { color: #6B7280; }
+
+/* Footer */
+html[data-theme='light'] .footer {
+    border-color: #E5E8EB;
+}
